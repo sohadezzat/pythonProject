@@ -31,7 +31,7 @@ def sub(num1, num2):
 
 # Function to divide two numbers
 def div(num1, num2):
-    if num2 != 0:
+    if num2 != 0:#تجنب للخطأ
        return num1 / num2
 
 
@@ -39,9 +39,7 @@ def div(num1, num2):
 def mul(num1, num2):
     return num1 * num2
 
-
-# Main program
-
+#test
 num1 = int(input("Enter the first number: "))
 num2 = int(input("Enter the second number: "))
 print("Sum:", add(num1, num2))
