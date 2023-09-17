@@ -17,3 +17,34 @@ if __name__ == '__main__':
 print("sohadezzat")
 print("sohadezzat")
 print("jalhoum")
+
+
+# Function to add two numbers
+def add(num1, num2):
+    return num1 + num2
+
+
+# Function to subtract two numbers
+def sub(num1, num2):
+    return num1 - num2
+
+
+# Function to divide two numbers
+def div(num1, num2):
+    if num2 != 0:
+       return num1 / num2
+
+
+# Function to multiply two numbers
+def mul(num1, num2):
+    return num1 * num2
+
+
+# Main program
+
+num1 = int(input("Enter the first number: "))
+num2 = int(input("Enter the second number: "))
+print("Sum:", add(num1, num2))
+print("Difference:", sub(num1, num2))
+print("Division:", div(num1, num2))
+print("Multiplication:", mul(num1, num2))
