@@ -43,6 +43,6 @@ def mul(num1, num2):
 num1 = int(input("Enter the first number: "))
 num2 = int(input("Enter the second number: "))
 print("Sum:", add(num1, num2))
-print("Difference:", sub(num1, num2))
+print("Subtract:", sub(num1, num2))
 print("Division:", div(num1, num2))
 print("Multiplication:", mul(num1, num2))
