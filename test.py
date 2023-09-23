@@ -7,30 +7,31 @@ if __name__ == '__main__':
     print_hi('PyCharm')
 
 
-    # Function to add two numbers
+
     def Sum(num1, num2):
         return num1 + num2
 
-
-    # Function to subtract two numbers
     def sub(num1, num2):
         return num1 - num2
 
-
-    # Function to divide two numbers
     def div(num1, num2):
         if num2 != 0:  # تجنب للخطأ
             return num1 / num2
-# Function to multiply two numbers
-def mul(num1, num2):
-    return num1 * num2
-def Calculate_triangle_area(base, height):
-    return 0.5*base*height
-def Calculate_circle_area(radius):
-    return (radius*radius) * 3.14   #pi
-def Calculate_rectangle_area(height, width):
-    return height * width
+
+    def mul(num1, num2):
+     return num1 * num2
+
+    def Calculate_triangle_area(base, height):
+     return 0.5*base*height
+
+    def Calculate_circle_area(radius):
+     return (radius*radius) * 3.14   #pi
+
+    def Calculate_rectangle_area(height, width):
+     return height * width
+
 list=['Sum','sub','div','mul','Calculate triangle area',' Calculate circle area','Calculate rectangle area','Exit']
+
 while True:
     print(list)
     choice = input("Enter your choice: ")
