@@ -31,35 +31,37 @@ def Calculate_circle_area(radius):
 def Calculate_rectangle_area(height, width):
     return height * width
 list=['Sum','sub','div','mul','Calculate triangle area',' Calculate circle area','Calculate rectangle area','Exit']
-print(list)
-choice = input("Enter your choice: ")
-if choice=='Sum':
-    num1 = int(input("Enter the first number: "))
-    num2 = int(input("Enter the second number: "))
-    print("Sum:", Sum(num1, num2))
-elif choice=='sub':
-    num1 = int(input("Enter the first number: "))
-    num2 = int(input("Enter the second number: "))
-    print("sub:", sub(num1, num2))
-elif choice == 'div':
-    num1 = int(input("Enter the first number: "))
-    num2 = int(input("Enter the second number: "))
-    print("div:", div(num1, num2))
-elif choice == 'mul':
-    num1 = int(input("Enter the first number: "))
-    num2 = int(input("Enter the second number: "))
-    print("mul:", mul(num1, num2))
-elif choice == 'Calculate triangle area':
-    base = int(input("Enter the base : "))
-    height = int(input("Enter the height: "))
-    print("triangle area:", Calculate_triangle_area(base, height))
-elif choice == 'Calculate circle area':
-    radius = int(input("Enter the radius: "))
-    print("circle area:", Calculate_circle_area(radius))
-elif choice == 'Calculate rectangle area':
-    Length = int(input("Enter the Length: "))
-    width = int(input("Enter the width : "))
-    print(" rectangle area:", Calculate_rectangle_area(Length, width))
-elif choice=='Exit':
-    print('Exit')
-
+while True:
+    print(list)
+    choice = input("Enter your choice: ")
+    if choice=='Sum':
+      num1 = int(input("Enter the first number: "))
+      num2 = int(input("Enter the second number: "))
+      print("Sum:", Sum(num1, num2))
+    elif choice=='sub':
+      num1 = int(input("Enter the first number: "))
+      num2 = int(input("Enter the second number: "))
+      print("sub:", sub(num1, num2))
+    elif choice == 'div':
+       num1 = int(input("Enter the first number: "))
+       num2 = int(input("Enter the second number: "))
+       print("div:", div(num1, num2))
+    elif choice == 'mul':
+      num1 = int(input("Enter the first number: "))
+      num2 = int(input("Enter the second number: "))
+      print("mul:", mul(num1, num2))
+    elif choice == 'Calculate triangle area':
+     base = int(input("Enter the base : "))
+     height = int(input("Enter the height: "))
+     print("triangle area:", Calculate_triangle_area(base, height))
+    elif choice == 'Calculate circle area':
+      radius = int(input("Enter the radius: "))
+      print("circle area:", Calculate_circle_area(radius))
+    elif choice == 'Calculate rectangle area':
+     Length = int(input("Enter the Length: "))
+     width = int(input("Enter the width : "))
+     print(" rectangle area:", Calculate_rectangle_area(Length, width))
+    elif choice=='Exit':
+      print('Exit')
+    else:
+        print('not found')
